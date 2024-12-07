@@ -213,16 +213,48 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 450px;
+  counter-reset: my-counter;
 }
 .services__step {
-  border: 1px solid var(--gray);
+  position: relative;
+  cursor: pointer;
+  border: 2px solid var(--gray);
+  counter-increment: my-counter;
+  padding: 10px 10px 10px 113px;
+  width: 450px;
+  transition: width 0.3s;
 }
+
+.services__step:hover {
+  border: 2px solid var(--acсent);
+  width: 500px;
+}
+
+.services__step:hover .services__step-title {
+  color: var(--acсent);
+}
+
+.services__step:hover::before{
+  color: var(--acсent);
+}
+
+.services__step::before {
+  position: absolute;
+  content: "0" counter(my-counter);
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--gray);
+  top: 50%;
+  transform: translate(-75px, -50%) rotate(-90deg);
+  transition: color 0.3s;
+}
+
+.services__step:nth-of-type(n + 10)::before {
+  content: counter(my-counter);
+}
+
 .services__step-title {
+  font-size: 24px;
+  transition: color 0.3s;
 }
-.services__step-text {
-}
-.anchor {
-}
-.link {
-}
+
