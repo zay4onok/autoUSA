@@ -39,6 +39,7 @@ body {
 
 .header {
   background: url(../images/header-bg.jpg) no-repeat center / cover;
+  margin-bottom: 200px;
 }
 
 .header__top {
