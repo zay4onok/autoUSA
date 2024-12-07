@@ -20,11 +20,12 @@ body {
   color: var(--black);
 }
 
-.list {
+ul,
+ol {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
@@ -135,11 +136,7 @@ body {
   margin-bottom: 100px;
 }
 
-.service__title {
-  position: relative;
-}
-
-.services__title::after {
+.h2::after {
   position: absolute;
   content: "";
   background-color: var(--accent-secondary);
@@ -150,6 +147,7 @@ body {
 }
 
 .h2 {
+  position: relative;
   font-size: 36px;
   line-height: 1.5;
   color: var(--accent-secondary);
@@ -234,7 +232,7 @@ body {
   color: var(--acсent);
 }
 
-.services__step:hover::before{
+.services__step:hover::before {
   color: var(--acсent);
 }
 
@@ -257,4 +255,3 @@ body {
   font-size: 24px;
   transition: color 0.3s;
 }
-
