@@ -17,6 +17,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
+  color: var(--black);
 }
 
 .list {
@@ -26,6 +27,7 @@ body {
 .link {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 .container {
@@ -80,6 +82,13 @@ body {
   background-color: var(--acсent);
   text-transform: uppercase;
   padding: 14px 54px 15px 55px;
+  transition: all 0.3s;
+}
+
+.anchor:hover,
+.anchor:focus {
+  background-color: var(--white);
+  color: var(--acсent);
 }
 
 .header__social-media {
