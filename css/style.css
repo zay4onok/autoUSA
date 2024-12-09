@@ -412,3 +412,21 @@ button {
   background-color: var(--acсent);
   height: 3px;
 }
+
+/* contacts */
+
+.contacts {
+  padding-bottom: 56px;
+}
+.contscts__title {
+  padding-top: 50px;
+}
+.contscts__title.h2::after {
+  top: 70px;
+}
+.contacts__address {
+  font-style: normal;
+}
+.contacts__address-item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
