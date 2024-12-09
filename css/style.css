@@ -47,6 +47,13 @@ img {
   display: block;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
 /* header */
 
 .header {
@@ -328,24 +335,27 @@ img {
 
 .cars__slider {
   display: flex;
-  gap: 14px;
+  margin: 0 -7px;
 }
 
 .cars__item {
   width: calc((100% - 28px) / 3);
   border: 1px solid var(--gray);
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin: 0 7px;
 }
 
 .cars__item:hover {
   background-color: var(--acсent);
   color: var(--white);
+  border-color: var(--acсent);
 }
 
 .cars__item-img {
   width: 100%;
   padding: 5px;
+  max-height: 250px;
 }
 
 .cars__item-content {
@@ -357,5 +367,31 @@ img {
   margin-bottom: 5px;
 }
 
-.cars__item-text {
+.slick-dots {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: -56px;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.slick-dots li:last-of-type {
+  margin-right: 0px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 50px;
+  height: 1px;
+  background-color: var(--gray);
+  transition: all 0.3s;
+}
+
+.slick-dots .slick-active button {
+  background-color: var(--acсent);
+  height: 3px;
 }
