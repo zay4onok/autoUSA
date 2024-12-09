@@ -43,6 +43,10 @@ a {
   position: relative;
 }
 
+img {
+  display: block;
+}
+
 /* header */
 
 .header {
@@ -324,16 +328,34 @@ a {
 
 .cars__slider {
   display: flex;
-  gap: 16px;
+  gap: 14px;
 }
 
 .cars__item {
+  width: calc((100% - 28px) / 3);
+  border: 1px solid var(--gray);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.cars__item:hover {
+  background-color: var(--acсent);
+  color: var(--white);
+}
+
 .cars__item-img {
+  width: 100%;
+  padding: 5px;
 }
+
 .cars__item-content {
+  padding: 15px 10px;
+  text-align: center;
 }
+
 .cars__item-title {
+  margin-bottom: 5px;
 }
+
 .cars__item-text {
 }
