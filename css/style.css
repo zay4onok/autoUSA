@@ -530,3 +530,16 @@ input {
 .form__btn {
   margin-top: 78px;
 }
+
+.footer {
+  background-color: var(--accent-secondary);
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.privacy-policy {
+  color: var(--white);
+}
