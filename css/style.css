@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
@@ -49,10 +49,23 @@ img {
 }
 
 button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
   background-color: transparent;
   border: none;
   padding: 0;
   outline: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--white);
 }
 
 .visuality-hidden {
@@ -171,7 +184,7 @@ button {
 
 .h2::after {
   position: absolute;
-  content: "";
+  content: '';
   background-color: var(--accent-secondary);
   width: 80px;
   height: 3px;
@@ -223,14 +236,14 @@ button {
 }
 
 .services-anchor::after {
-  content: "ЖМИ";
+  content: 'ЖМИ';
   position: absolute;
   color: var(--gray);
   margin-left: 139px;
 }
 
 .services-anchor::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--gray);
   width: 80px;
@@ -270,7 +283,7 @@ button {
 
 .services__step::before {
   position: absolute;
-  content: "0" counter(my-counter);
+  content: '0' counter(my-counter);
   font-weight: 400;
   font-size: 36px;
   color: var(--gray);
@@ -396,6 +409,7 @@ button {
   cursor: pointer;
   margin-right: 20px;
 }
+
 .slick-dots li:last-of-type {
   margin-right: 0px;
 }
@@ -415,18 +429,104 @@ button {
 
 /* contacts */
 
+.contacts-form__inner {
+  display: flex;
+}
+
 .contacts {
   padding-bottom: 56px;
+  max-width: 600px;
+  flex-grow: 1;
 }
+
 .contscts__title {
   padding-top: 50px;
 }
+
 .contscts__title.h2::after {
   top: 70px;
 }
+
 .contacts__address {
   font-style: normal;
 }
+
 .contacts__address-item:not(:last-of-type) {
   margin-bottom: 20px;
+}
+
+.form {
+  background-color: var(--accent-secondary);
+  max-width: 600px;
+  flex-grow: 1;
+}
+
+.form__title {
+  color: var(--white);
+  width: 343px;
+  padding-top: 50px;
+  margin: 0 auto 16px;
+}
+
+.form__title::after {
+  background-color: var(--white);
+  margin-left: 7px;
+  top: 70px;
+}
+
+.form__area {
+  padding: 0 75px;
+  text-align: center;
+}
+
+.form__area-item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.form__area-item {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: var(--gray);
+  transition: font-size 300ms, top 300ms;
+  cursor: text;
+}
+
+.form__input {
+  left: 0;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  height: 75px;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 1px;
+  transition: border-color 300ms, font-size 500ms;
+}
+
+.form__input:focus {
+  border: 1px solid var(--acсent);
+  font-size: 18px;
+}
+
+.form__input:not(:placeholder-shown) {
+  font-size: 18px;
+}
+
+.form__input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  font-size: 14px;
+  top: 12px;
+}
+
+.form__btn {
+  margin-top: 78px;
 }
