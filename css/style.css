@@ -39,6 +39,7 @@ a {
 
 .container {
   max-width: 1220px;
+  min-width: 320px;
   padding: 0 10px;
   margin: 0 auto;
   position: relative;
@@ -628,5 +629,39 @@ input {
   }
   .header__bottom {
     gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .header__top {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .header__bottom {
+    padding-bottom: 125px;
+  }
+
+  .phone {
+    font-size: 12px;
+  }
+
+  .header__content-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .header__content-title span {
+    font-size: 14px;
+  }
+
+  .header__content-text {
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+
+  .header__content-img {
+    width: 305px;
+    height: 173px;
+    bottom: -75px;
   }
 }
