@@ -100,6 +100,7 @@ input {
 .header__top-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .phone {
@@ -128,6 +129,7 @@ input {
 }
 
 .anchor {
+  height: 50px;
   font-size: 14px;
   color: var(--white);
   background-color: var(--acсent);
@@ -546,8 +548,41 @@ input {
 
 @media only screen and (max-width: 1024px) {
   .header__content-img {
-   width: 610.5px;
-   height: 346.5px;
-   bottom: -150px;
+    width: 610.5px;
+    height: 346.5px;
+    bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .header__content {
+    text-align: center;
+  }
+  .header__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 230px;
+  }
+  .header__social-media {
+    margin: 0;
+    padding: 0;
+  }
+  .header__social-media .social-media {
+    justify-content: center;
+  }
+  .header__content-img {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .header__content-title {
+    font-size: 62px;
+  }
+  .header__content-title span {
+    font-size: 31px;
+  }
+  .header .anchor {
+    width: 250px;
+    margin: 0 auto;
   }
 }
