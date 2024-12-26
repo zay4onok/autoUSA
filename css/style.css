@@ -593,6 +593,7 @@ input {
   }
   .header__content-title {
     font-size: 52px;
+    line-height: 0.9;
     margin-bottom: 20px;
   }
   .header__content-title span {
@@ -600,14 +601,32 @@ input {
   }
   .header__content-text {
     margin-bottom: 20px;
-}
-.header__bottom {
-  gap: 20px;
-}
-.header__content-img {
-  width: 458px;
-  height: 260px;
-  bottom: -115px;
+  }
+  .header__bottom {
+    gap: 20px;
+  }
+  .header__content-img {
+    width: 458px;
+    height: 260px;
+    bottom: -115px;
+  }
+  .phone {
+    font-size: 30px;
+  }
 }
 
+@media only screen and (max-width: 574px) {
+  .header__content-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  .header__content-title span {
+    font-size: 21px;
+  }
+  .header__content-text {
+    margin-bottom: 15px;
+  }
+  .header__bottom {
+    gap: 15px;
+  }
 }
