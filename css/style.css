@@ -543,3 +543,11 @@ input {
 .privacy-policy {
   color: var(--white);
 }
+
+@media only screen and (max-width: 1024px) {
+  .header__content-img {
+   width: 610.5px;
+   height: 346.5px;
+   bottom: -150px;
+  }
+}
