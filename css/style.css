@@ -586,3 +586,28 @@ input {
     margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 675px) {
+  .header__bottom {
+    padding-bottom: 170px;
+  }
+  .header__content-title {
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+  .header__content-title span {
+    font-size: 26px;
+  }
+  .header__content-text {
+    margin-bottom: 20px;
+}
+.header__bottom {
+  gap: 20px;
+}
+.header__content-img {
+  width: 458px;
+  height: 260px;
+  bottom: -115px;
+}
+
+}
