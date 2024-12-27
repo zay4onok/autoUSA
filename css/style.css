@@ -624,6 +624,13 @@ input {
 }
 
 @media only screen and (max-width: 675px) {
+  .header {
+    margin-bottom: 200px;
+}
+  .header__top {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
   .header__bottom {
     padding-bottom: 170px;
   }
