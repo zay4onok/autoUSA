@@ -563,10 +563,30 @@ input {
 }
 
 @media only screen and (max-width: 1024px) {
+  .header {
+    margin-bottom: 250px;
+  }
+  .h2 {
+    text-align: center;
+  }
   .header__content-img {
     width: 610.5px;
     height: 346.5px;
     bottom: -150px;
+  }
+  .services__inner {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .services__list {
+    text-align: center;
+  }
+  .services__steps {
+    max-width: 450px;
+  }
+  .anchor.services-anchor {
+    margin: 0 auto;
   }
 }
 
