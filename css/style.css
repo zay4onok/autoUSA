@@ -591,6 +591,10 @@ input {
 }
 
 @media only screen and (max-width: 840px) {
+  .header__top {
+    padding-top: 40px;
+    margin-bottom: 80px;
+  }
   .header__content {
     text-align: center;
   }
@@ -626,10 +630,6 @@ input {
 @media only screen and (max-width: 675px) {
   .header {
     margin-bottom: 200px;
-}
-  .header__top {
-    padding-top: 40px;
-    margin-bottom: 40px;
   }
   .header__bottom {
     padding-bottom: 170px;
@@ -637,16 +637,9 @@ input {
   .header__content-title {
     font-size: 52px;
     line-height: 0.9;
-    margin-bottom: 20px;
   }
   .header__content-title span {
     font-size: 26px;
-  }
-  .header__content-text {
-    margin-bottom: 20px;
-  }
-  .header__bottom {
-    gap: 20px;
   }
   .header__content-img {
     width: 458px;
@@ -656,28 +649,27 @@ input {
   .phone {
     font-size: 30px;
   }
+  .header__content-text {
+    font-size: 16px;
+ }
 }
 
 @media only screen and (max-width: 574px) {
   .header__content-title {
     font-size: 42px;
-    margin-bottom: 15px;
   }
   .header__content-title span {
     font-size: 21px;
   }
   .header__content-text {
-    margin-bottom: 15px;
-  }
-  .header__bottom {
-    gap: 15px;
-  }
+   font-size: 14px;
+}
 }
 
 @media only screen and (max-width: 475px) {
   .header {
     margin-bottom: 150px;
-}
+  }
   .header__bottom {
     padding-bottom: 125px;
   }
@@ -688,7 +680,7 @@ input {
 
   .header__content-title {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .header__content-title span {
@@ -696,7 +688,7 @@ input {
   }
 
   .header__content-text {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 10px;
   }
 
@@ -707,18 +699,18 @@ input {
   }
   .services__step {
     width: 100%;
-}
-.h2 {
-  font-size: 28px;
-}
-.h2::after {
-  width: 60px;
-  margin-left: 15px;
-}
-.services-anchor::after {
-  display: none;
-}
-.services-anchor::before {
-  display: none;
-}
+  }
+  .h2 {
+    font-size: 28px;
+  }
+  .h2::after {
+    width: 60px;
+    margin-left: 15px;
+  }
+  .services-anchor::after {
+    display: none;
+  }
+  .services-anchor::before {
+    display: none;
+  }
 }
