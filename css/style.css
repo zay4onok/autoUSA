@@ -675,10 +675,9 @@ input {
 }
 
 @media only screen and (max-width: 475px) {
-  .header__top {
-    padding-top: 40px;
-    margin-bottom: 40px;
-  }
+  .header {
+    margin-bottom: 150px;
+}
   .header__bottom {
     padding-bottom: 125px;
   }
@@ -706,4 +705,20 @@ input {
     height: 173px;
     bottom: -75px;
   }
+  .services__step {
+    width: 100%;
+}
+.h2 {
+  font-size: 28px;
+}
+.h2::after {
+  width: 60px;
+  margin-left: 15px;
+}
+.services-anchor::after {
+  display: none;
+}
+.services-anchor::before {
+  display: none;
+}
 }
