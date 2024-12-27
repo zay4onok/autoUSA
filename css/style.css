@@ -550,6 +550,18 @@ input {
   color: var(--white);
 }
 
+@media only screen and (max-width: 1125px) {
+  .services__inner {
+    gap: 50px;
+  }
+  .services__list {
+    max-width: 450px;
+  }
+  .services__step:hover {
+    width: auto;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .header__content-img {
     width: 610.5px;
