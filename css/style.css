@@ -674,6 +674,21 @@ input {
   .header__content-text {
     font-size: 16px;
   }
+  .cars__title.h2 {
+    font-size: 27px;
+  }
+  .cars__title.h2::after {
+    display: none;
+  }
+  .slick-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.slick-dots .slick-active button {
+  width: 15px;
+  height: 15px;
+}
 }
 
 @media only screen and (max-width: 574px) {
