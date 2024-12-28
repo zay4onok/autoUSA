@@ -588,6 +588,28 @@ input {
   .anchor.services-anchor {
     margin: 0 auto;
   }
+  .benefits__title {
+    margin-left: 0;
+  }
+  .benefits__content-list {
+    text-align: center;
+    padding: 30px 0 45px 0px;
+}
+.benefits__content-item {
+  margin: 0 auto -20px auto;
+}
+.benefits__img {
+  width: 240px;
+  height: 455px;
+  margin-top: 105px;
+  margin-right: 50px;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .benefits__img  {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 840px) {
@@ -651,7 +673,7 @@ input {
   }
   .header__content-text {
     font-size: 16px;
- }
+  }
 }
 
 @media only screen and (max-width: 574px) {
