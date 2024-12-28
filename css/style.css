@@ -684,8 +684,8 @@ input {
     font-size: 21px;
   }
   .header__content-text {
-   font-size: 14px;
-}
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 475px) {
