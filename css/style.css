@@ -750,4 +750,7 @@ input {
   .services-anchor::before {
     display: none;
   }
+  .slick-dots li {
+    margin-right: 15px;
+  }
 }
