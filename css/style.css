@@ -544,12 +544,10 @@ input {
   margin-top: 78px;
 }
 
-.footer {
-  background-color: var(--accent-secondary);
-}
 .footer__inner {
+  background-color: var(--accent-secondary);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100px;
 }
@@ -725,6 +723,12 @@ input {
   }
   .form__area {
     padding: 0 20px;
+  }
+  .footer__inner {
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    padding: 50px 0;
   }
 }
 
