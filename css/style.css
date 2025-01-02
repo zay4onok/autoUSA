@@ -166,6 +166,7 @@ input {
 
 .social-media {
   display: flex;
+  align-items: center;
 }
 
 .social-media__item {
@@ -174,6 +175,12 @@ input {
 
 .social-media__item:last-of-type {
   margin-right: 0;
+}
+
+.social-media__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__content-img {
@@ -718,7 +725,7 @@ input {
   }
   .form__area {
     padding: 0 20px;
-}
+  }
 }
 
 @media only screen and (max-width: 574px) {
@@ -785,5 +792,5 @@ input {
   }
   .form__title::after {
     display: none;
-}
+  }
 }
