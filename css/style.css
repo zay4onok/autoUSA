@@ -615,9 +615,15 @@ input {
   .form {
     margin: 0 auto;
     width: 600px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
   }
   .cars {
     margin-bottom: 100px;
+  }
+  .form__btn {
+    margin: 0 auto;
+    margin-top: 78px;
   }
 }
 
