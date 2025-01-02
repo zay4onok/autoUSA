@@ -712,6 +712,15 @@ input {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .form {
+    width: 100%;
+  }
+  .form__area {
+    padding: 0 20px;
+}
+}
+
 @media only screen and (max-width: 574px) {
   .header__content-title {
     font-size: 42px;
