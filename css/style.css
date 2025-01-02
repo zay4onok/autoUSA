@@ -783,4 +783,7 @@ input {
   .slick-dots li {
     margin-right: 15px;
   }
+  .form__title::after {
+    display: none;
+}
 }
