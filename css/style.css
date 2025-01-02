@@ -604,6 +604,21 @@ input {
     margin-top: 105px;
     margin-right: 50px;
   }
+  .contacts-form__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts {
+    max-width: 100%;
+    text-align: center;
+  }
+  .form {
+    margin: 0 auto;
+    width: 600px;
+  }
+  .cars {
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (max-width: 840px) {
@@ -684,11 +699,11 @@ input {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-}
-.slick-dots .slick-active button {
-  width: 15px;
-  height: 15px;
-}
+  }
+  .slick-dots .slick-active button {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media only screen and (max-width: 574px) {
